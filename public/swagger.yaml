@@ -1,0 +1,21 @@
+swagger: "2.0"
+info:
+  title: Sample API
+  description: API description
+  version: 1.0.0
+
+host: localhost:4000
+basePath: /store/v1
+schemes:
+  - https
+
+paths:
+  /content:
+    get:
+      summary: Return content
+      description: Get the content data based on query params
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
